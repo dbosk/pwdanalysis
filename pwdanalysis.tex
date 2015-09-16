@@ -1,0 +1,53 @@
+% $Id$
+\documentclass[a4paper]{article}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[hyphens]{url}
+\usepackage[natbib=true,style=alphabetic]{biblatex}
+\addbibresource{passwd.bib}
+
+\usepackage{amssymb,amsmath,amsthm}
+\newtheorem{theorem}{Sats}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Korollarium}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Exempel}
+\newtheorem{exercise}{Övning}
+\theoremstyle{remark}
+\newtheorem{remark}{Anmärkning}
+\renewcommand{\qedsymbol}{Q.E.D.}
+
+\usepackage{varioref}
+\renewcommand{\reftextbefore}{(föregående sida)}
+\renewcommand{\reftextfacebefore}{(föregående sida)}
+\renewcommand{\reftextafter}{(nästa sida)}
+\renewcommand{\reftextfaceafter}{(nästa sida)}
+\renewcommand{\reftextfaraway}[1]{(sidan~\pageref{#1})}
+\usepackage{hyperref}
+\usepackage[noabbrev,swedish]{cleveref}
+\crefname{conjecture}{förmodan}{förmodan}
+\crefname{axiom}{axiom}{axiom}
+\crefname{exercise}{övning}{övning}
+\Crefname{exercise}{Övning}{Övning}
+\crefname{corollary}{korollarium}{korollarium}
+%\crefname{proposition}{proposition}{proposition}
+
+\title{Grundläggande lösenordsanalys}
+\author{Daniel Bosk\footnote{%
+    Detta verk är tillgängliggjort under licensen Creative Commons 
+    Erkännande-DelaLika 2.5 Sverige (CC BY-SA 2.5 SE).
+    För att se en sammanfattning och kopia av licenstexten besök URL 
+    \url{http://creativecommons.org/licenses/by-sa/2.5/se/}.
+  }
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\input{passwd.tex}
+
+\printbibliography{}
+\end{document}
